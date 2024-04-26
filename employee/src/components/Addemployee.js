@@ -25,7 +25,7 @@ const AddEmployee = () => {
       password
     };
     console.log(data);
-    axios.post('http://localhost:5000/insertEmployee', data)
+    axios.post('https://elmsproject.onrender.com/insertEmployee', data)
       .then((response) => {
         console.log(response.data);
       })

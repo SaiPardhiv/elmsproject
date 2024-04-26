@@ -38,7 +38,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch data from the API endpoint
-    axios.get('http://localhost:5000/viewEmployee')
+    axios.get('https://elmsproject.onrender.com/viewEmployee')
       .then(response => {
         // Log the response data to ensure it's retrieved correctly
         console.log('Response data:', response.data);

@@ -16,7 +16,7 @@ const App = () => {
   const drawerWidth = 240;
 
   useEffect(() => {
-    axios.get('http://localhost:5000/viewLeave')
+    axios.get('https://elmsproject.onrender.com/viewLeave')
       .then(response => {
         setLeaves(response.data);
       })

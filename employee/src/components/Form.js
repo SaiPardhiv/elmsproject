@@ -28,7 +28,7 @@ const Form = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/insertLeave', formData);
+      const response = await axios.post('https://elmsproject.onrender.com/insertLeave', formData);
       console.log(response.formData);
       
       console.log('Leave Applied Successfully');
