@@ -18,16 +18,14 @@ import About from './About';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Link as RouterLink } from 'react-router-dom';
-import ReCAPTCHA from "react-google-recaptcha";
+
 
 
 function SignIn() {
   const [auname, setauname] = useState('');
   const [apwd, setapwd] = useState('');
   const navigate = useNavigate();
-  const onChange = () => {
-
-  };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -108,7 +106,7 @@ function SignIn() {
                   control={<Checkbox value="remember" color="primary" />}
                   label="Remember me"
                 />
-                <ReCAPTCHA sitekey="6LesCcgpAAAAACg9yQeWG-NU1i4RjDzrflbW6fWo" onChange={onChange}/>
+                
                 <Button
                   type="submit"
                   fullWidth
